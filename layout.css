@@ -1,0 +1,73 @@
+/**
+Nome: layout.css
+Função: Toda codificação responsável pela formatação do layout deve ser implementada aqui.
+*/
+
+*{margin:0; padding:0}
+body{
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:14px;
+}
+
+#form_container, #resultado{
+    
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+#resultado {color:#0066CC}
+
+#form_container fieldset{width:200px; padding:10px;}
+#form_container fieldset input{width:190px; padding:2px; border:1px solid #ccc; margin:2px 0}
+#form_container fieldset input:hover, #form_container fieldset input:focus{border:1px solid #000}
+
+.blue{color:#0066CC}
+.red{color:#FF0000}
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+#home img#logoCar {
+    width: 90px;
+}
+#home h1{
+    font-size: 24px;
+}
+
+
+#home div table th td button{
+    font-size: 12px !important;
+    margin:5px !important;
+    background: #685a9e;
+ 
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+     
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
